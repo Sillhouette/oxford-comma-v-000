@@ -6,7 +6,7 @@ def oxford_comma(array)
     return array.join(" and ")
   else
     last = array.pop();
-    final = `#{before_last.join(", ")} and #{array.last}`;
+    final = `#{array.join(", ")} and #{last}`;
     return final;
   end
   #array.join(", ")
