@@ -5,7 +5,7 @@ def oxford_comma(array)
   when 2
     return array.join(" and ")
   else
-    before_last = array.pop();
+    before_last = array.splice(-1);
     final = `#{before_last.join(", ")} and #{array.last}`;
     return final;
   end
